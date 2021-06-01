@@ -1,0 +1,18 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: airbyte-webapp-loadbalancer
+spec:
+  externalTrafficPolicy: Local
+  type: LoadBalancer
+  selector:
+    airbyte: webapp
+  ports:
+    - name: webapp-ing
+      port: 8000
+      targetPort: 80
+      protocol: TCP
+    - name: server-ing
+      port: 8001
+      targetPort: 80
+      protocol: TCP
