@@ -95,7 +95,7 @@ spec:
           args:
             [
               "-c",
-              "mkdir -p /configs/config && yes n | cp -r -i /app/seed/config /configs",
+              "mkdir -p /mnt/config && yes n | cp -r -i /app/seed/config /mnt",
             ]
           volumeMounts:
             - name: airbyte-volume-configs
