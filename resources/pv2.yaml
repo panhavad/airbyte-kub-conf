@@ -19,4 +19,4 @@ spec:
             - key: kubernetes.io/hostname
               operator: In
               values:
-                 - scw-cluster-dev-core-30ed3714585e4fd8a6c129900
+                 - scw-aleia-dev-core-6a4c16d1d265449f84fb68f3b4e
